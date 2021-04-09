@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from "react-router-dom"
+import { useParams,useRouteMatch } from "react-router-dom"
 import { ListGroup, ListGroupItem, Spinner } from 'reactstrap';
 
 
 function ListType() {
     const params = useParams();
+    let match = useRouteMatch();
+    const urlSebelum = match.url.split('/')
     const [typeList, setTypeList] = useState(null)
     const [isLoading, setIsLoading] = useState(false);
 
-    const baseUrl = `https://berita-indo-api.vercel.app/v1/okezone-news/${params.type}`
+    const baseUrl = `https://berita-indo-api.vercel.app/v1/${urlSebelum[1]}/${params.type}`
 
     useEffect(() => {  
         getData(baseUrl)

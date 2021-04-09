@@ -43,7 +43,7 @@ function Navigation() {
             </NavItem>
             <NavItem>
             <NavLink>
-              <Link to="/okezone">OKEZONE</Link>
+              <Link to="/okezone-news">OKEZONE</Link>
               </NavLink>
             </NavItem>
           </Nav>

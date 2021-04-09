@@ -17,7 +17,7 @@ function Routes() {
             <Route>
                 
             </Route> */}
-            <Route path="/okezone" render={() => <Okezone/>} />
+            <Route path="/okezone-news" render={() => <Okezone/>} />
         </Switch>
     )
 }
