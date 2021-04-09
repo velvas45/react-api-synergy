@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom"
-import { ListGroup, ListGroupItem } from 'reactstrap';
+import { ListGroup, ListGroupItem, Spinner } from 'reactstrap';
 
 
 function ListType() {
@@ -30,7 +30,17 @@ function ListType() {
     return (
         <>
         <h4>Berita: {params.type}</h4>
-          {isLoading && <p>Loading......</p>}
+          {isLoading && (
+              <>
+              <div className="d-flex justify-content-center">
+              <Spinner type="grow" color="primary" />
+              <Spinner type="grow" color="primary" />
+              <Spinner type="grow" color="primary" />
+              <Spinner type="grow" color="primary" />
+              <Spinner type="grow" color="primary" />
+              </div>
+              </>
+          )}
           
             <ListGroup>
                 {!isLoading && typeList && typeList.map((data, i) => (
