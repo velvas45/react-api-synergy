@@ -23,12 +23,12 @@ function Navigation() {
           <Nav className="mr-auto" navbar>
             <NavItem>
                 <NavLink>
-              <Link to="/cnbc">CNBC</Link>
+              <Link to="/cnbc-news">CNBC</Link>
               </NavLink>
             </NavItem>
             <NavItem>
             <NavLink>
-              <Link to="/bbc">BBC</Link>
+              <Link to="/bbc-news">BBC</Link>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -38,7 +38,7 @@ function Navigation() {
             </NavItem>
             <NavItem>
             <NavLink>
-              <Link to="/republika">REPUBLIKA</Link>
+              <Link to="/republika-news">REPUBLIKA</Link>
               </NavLink>
             </NavItem>
             <NavItem>
